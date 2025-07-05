@@ -1,0 +1,14 @@
+<h2>Login</h2>
+  <input [(ngModel)]="loginEmail" placeholder="Email">
+  <input [(ngModel)]="loginPassword" type="password" placeholder="Password">
+  <button (click)="login()">Login</button>
+  <p>{{loginMessage}}</p>
+
+  <hr>
+
+  <h2>Register</h2>
+  <input [(ngModel)]="registerName" placeholder="Name">
+  <input [(ngModel)]="registerEmail" placeholder="Email">
+  <input [(ngModel)]="registerPassword" type="password" placeholder="Password">
+  <button (click)="register()">Register</button>
+  <p>{{registerMessage}}</p>

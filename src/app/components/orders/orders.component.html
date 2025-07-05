@@ -1,0 +1,7 @@
+<h2>My Orders</h2>
+  <input [(ngModel)]="userId" placeholder="Enter your user ID">
+  <button (click)="fetchOrders()">Get Orders</button>
+
+  <div *ngFor="let order of orders">
+    Order ID: {{order.id}}, Product ID: {{order.productId}}, Quantity: {{order.quantity}}, Delivered: {{order.delivered}}
+  </div>

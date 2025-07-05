@@ -1,0 +1,26 @@
+<p-menubar>
+  <ng-template pTemplate="start">
+    <div style="display: flex; align-items: center">
+      <!-- Wrap logo and title with routerLink -->
+      <a
+        routerLink="/"
+        style="
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: inherit;
+        "
+      >
+        <img src="assets/logo.jpeg" alt="logo" height="40" />
+        <span style="margin-left: 15px" class="text-xl font-bold ml-2"
+          >Asalkar Healthy Hub</span
+        >
+      </a>
+    </div>
+  </ng-template>
+
+  <!-- Right side: menu items -->
+  <ng-template pTemplate="end">
+    <p-menubar [model]="items"></p-menubar>
+  </ng-template>
+</p-menubar>
